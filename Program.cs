@@ -219,12 +219,7 @@ namespace Practice_Linq
 
         static string GetResultForTeam1(FootballGame game)                                             
         {
-            if (game.Home_score > game.Away_score)
-                return "Win";
-            else if (game.Home_score < game.Away_score)
-                return "Loss";
-            else
-                return "Draw";
+            return game.Home_score > game.Away_score ? "Win" : (game.Home_score < game.Away_score ? "Loss" : "Draw");
         }
 
         // Запит 10
